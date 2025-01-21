@@ -1,0 +1,512 @@
+/* COLORS */
+/*=== RESET ==========*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+/*=== CONTAINER ==========*/
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/*=== HEADER ==========*/
+.header {
+  width: 100%;
+}
+.header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.75rem 1.5rem;
+}
+.header .navbar .menu {
+  display: flex;
+  gap: 1rem;
+}
+.header .navbar .menu .menu-link {
+  font: 400 0.875rem "Raleway", sans-serif;
+}
+.header .navbar .menu .menu-link a {
+  color: hsl(243, 87%, 12%);
+  transition: color 0.2s;
+}
+.header .navbar .menu .menu-link a:hover {
+  color: hsl(224, 93%, 58%);
+}
+
+/*=== MAIN ==========*/
+.main {
+  /*=== FILES SECTION ==========*/
+  /*=== SHARE SECTION ==========*/
+  /*=== NEWSLETTER ==========*/
+}
+.main .files-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem 1.5rem;
+}
+.main .files-section .illustration-img {
+  width: 100%;
+  max-width: 34rem;
+}
+.main .files-section .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .files-section .content .title {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  text-align: center;
+  color: hsl(243, 87%, 12%);
+  max-width: 30rem;
+  margin-bottom: 2rem;
+}
+.main .files-section .content .description {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  color: hsl(243, 87%, 12%);
+  max-width: 30rem;
+  margin-bottom: 2rem;
+}
+.main .files-section .content .form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+.main .files-section .content .form .input-email {
+  border: solid 1px hsl(243, 87%, 12%);
+  border-radius: 0.2rem;
+  padding: 0.875rem 1.5rem;
+}
+.main .files-section .content .form .input-email::-moz-placeholder {
+  color: hsl(0, 0%, 75%);
+}
+.main .files-section .content .form .input-email::placeholder {
+  color: hsl(0, 0%, 75%);
+}
+.main .files-section .content .form .input-email:focus {
+  outline: none;
+}
+.main .files-section .content .form .input-email:invalid {
+  border: 1px solid red;
+}
+.main .files-section .content .form .started-btn {
+  background-color: hsl(224, 93%, 58%);
+  box-shadow: 2px 2px 6px -4px hsl(243, 87%, 12%);
+  border-radius: 0.2rem;
+  color: hsl(240, 45%, 98%);
+  font-weight: 700;
+  padding: 0.875rem 1.5rem;
+  transition: 0.2s;
+}
+.main .files-section .content .form .started-btn:hover {
+  filter: opacity(0.8);
+}
+.main .curve-img img {
+  width: 100%;
+}
+.main .share-section {
+  background-color: hsl(240, 45%, 98%);
+}
+.main .share-section .share-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem 1.5rem;
+}
+.main .share-section .share-wrapper .illustration-img {
+  width: 100%;
+  max-width: 34rem;
+}
+.main .share-section .share-wrapper .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .share-section .share-wrapper .content .title {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  text-align: center;
+  color: hsl(243, 87%, 12%);
+  max-width: 30rem;
+  margin-bottom: 2rem;
+}
+.main .share-section .share-wrapper .content .description {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  color: hsl(238, 22%, 44%);
+  max-width: 30rem;
+  margin-bottom: 2rem;
+}
+.main .share-section .share-wrapper .content .link-fylo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 auto 4rem auto;
+  width: 10.8rem;
+}
+.main .share-section .share-wrapper .content .link-fylo a {
+  color: hsl(170, 45%, 43%);
+  position: relative;
+}
+.main .share-section .share-wrapper .content .link-fylo a::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 172px;
+  height: 1px;
+  background-color: hsl(170, 45%, 43%);
+}
+.main .share-section .share-wrapper .content .link-fylo .arrow-icon {
+  width: 1.2rem;
+}
+.main .share-section .share-wrapper .content .avatar-comment {
+  max-width: 21rem;
+  border-radius: 0.3rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px 2px hsl(0, 0%, 75%);
+  padding: 1.8rem;
+}
+.main .share-section .share-wrapper .content .avatar-comment .quote-icon {
+  width: 0.9rem;
+  height: auto;
+  margin-bottom: 0.875rem;
+}
+.main .share-section .share-wrapper .content .avatar-comment p {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: hsl(243, 87%, 12%);
+  margin-bottom: 1rem;
+}
+.main .share-section .share-wrapper .content .avatar-comment .avatar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.main .share-section .share-wrapper .content .avatar-comment .avatar .avatar-img {
+  width: 2.5rem;
+  border-radius: 50%;
+}
+.main .share-section .share-wrapper .content .avatar-comment .avatar .about-avatar h5 {
+  font-size: 0.75rem;
+  color: hsl(243, 87%, 12%);
+}
+.main .share-section .share-wrapper .content .avatar-comment .avatar .about-avatar p {
+  font-size: 0.75rem;
+  color: hsl(243, 87%, 12%);
+  margin: 0;
+}
+.main .newsletter {
+  background-color: hsl(238, 22%, 44%);
+}
+.main .newsletter .newsletter-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5rem 1.5rem;
+}
+.main .newsletter .newsletter-wrapper .about-newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .newsletter .newsletter-wrapper .about-newsletter .newsletter-title {
+  font-family: "Raleway", sans-serif;
+  color: hsl(240, 45%, 98%);
+  margin-bottom: 1.2rem;
+}
+.main .newsletter .newsletter-wrapper .about-newsletter .newsletter-description {
+  font-size: 1rem;
+  text-align: center;
+  color: hsl(240, 45%, 98%);
+  max-width: 30rem;
+}
+.main .newsletter .newsletter-wrapper .form-newsletter .form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+.main .newsletter .newsletter-wrapper .form-newsletter .form .input-email {
+  border: solid 1px hsl(243, 87%, 12%);
+  border-radius: 0.2rem;
+  padding: 0.875rem 1.5rem;
+}
+.main .newsletter .newsletter-wrapper .form-newsletter .form .input-email::-moz-placeholder {
+  color: hsl(0, 0%, 75%);
+}
+.main .newsletter .newsletter-wrapper .form-newsletter .form .input-email::placeholder {
+  color: hsl(0, 0%, 75%);
+}
+.main .newsletter .newsletter-wrapper .form-newsletter .form .input-email:focus {
+  outline: none;
+}
+.main .newsletter .newsletter-wrapper .form-newsletter .form .input-email:invalid {
+  border: 1px solid red;
+}
+.main .newsletter .newsletter-wrapper .form-newsletter .form .started-btn {
+  background-color: hsl(224, 93%, 58%);
+  box-shadow: 2px 2px 6px -4px hsl(243, 87%, 12%);
+  border-radius: 0.2rem;
+  color: hsl(240, 45%, 98%);
+  font-weight: 700;
+  padding: 0.875rem 1.5rem;
+  transition: 0.2s;
+}
+.main .newsletter .newsletter-wrapper .form-newsletter .form .started-btn:hover {
+  filter: opacity(0.8);
+}
+
+/*=== FOOTER ==========*/
+.footer {
+  background-color: hsl(243, 87%, 12%);
+}
+.footer .footer-wrapper {
+  padding: 5rem 1.5rem;
+}
+.footer .footer-wrapper .footer-logo {
+  filter: brightness(0) invert(1);
+  margin-bottom: 2.5rem;
+}
+.footer .footer-wrapper .footer-info {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-wrapper .footer-info .fylo-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.footer .footer-wrapper .footer-info .fylo-contact .footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: hsl(240, 45%, 98%);
+}
+.footer .footer-wrapper .footer-info .footer-links {
+  margin-bottom: 3rem;
+}
+.footer .footer-wrapper .footer-info .footer-links .links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer .footer-wrapper .footer-info .footer-links .links li a {
+  color: hsl(240, 45%, 98%);
+  transition: 0.2s;
+}
+.footer .footer-wrapper .footer-info .footer-links .links li a:hover {
+  color: hsl(224, 93%, 58%);
+}
+.footer .footer-wrapper .footer-info .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.footer .footer-wrapper .footer-info .social-links .social-icons {
+  width: 2.25rem;
+  border: solid 1px hsl(240, 45%, 98%);
+  border-radius: 50%;
+  font-size: 1rem;
+  text-align: center;
+  color: hsl(240, 45%, 98%);
+  padding: 0.4rem;
+  transition: 0.2s;
+}
+.footer .footer-wrapper .footer-info .social-links .social-icons:hover {
+  color: hsl(224, 93%, 58%);
+  border: solid 1px hsl(224, 93%, 58%);
+}
+.footer .footer-wrapper .attribution p {
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-align: center;
+  color: hsl(240, 45%, 98%);
+}
+.footer .footer-wrapper .attribution p a {
+  color: hsl(170, 45%, 43%);
+  transition: color 0.2s;
+}
+.footer .footer-wrapper .attribution p a:hover {
+  color: hsl(224, 93%, 58%);
+}
+
+/*=== MEDIUM DEVICES - TABLETS ==========*/
+@media (min-width: 768px) {
+  .header .navbar {
+    padding: 3rem 2rem;
+  }
+  .header .navbar .logo {
+    width: 8.5rem;
+  }
+  .header .navbar .menu {
+    display: flex;
+    gap: 2rem;
+  }
+  .header .navbar .menu .menu-link {
+    font: 400 1rem "Raleway", sans-serif;
+  }
+  .main .files-section {
+    gap: 4rem;
+    padding: 6rem 2rem;
+  }
+  .main .files-section .content .title {
+    font-size: 1.75rem;
+  }
+  .main .files-section .content .description {
+    font-size: 1.125rem;
+  }
+  .main .share-section .share-wrapper {
+    gap: 4rem;
+    padding: 6rem 2rem;
+  }
+  .main .share-section .share-wrapper .content .title {
+    font-size: 1.75rem;
+  }
+  .main .share-section .share-wrapper .content .description {
+    font-size: 1.125rem;
+  }
+  .main .newsletter .newsletter-wrapper {
+    gap: 3rem;
+    padding: 6rem 2rem;
+  }
+  .main .newsletter .newsletter-wrapper .about-newsletter .newsletter-title {
+    font-size: 1.75rem;
+  }
+  .main .newsletter .newsletter-wrapper .about-newsletter .newsletter-description {
+    font-size: 1.125rem;
+  }
+  .footer .footer-wrapper {
+    padding: 6rem 2rem;
+  }
+}
+/*====== LARGE DEVICES - DESKTOPS ======*/
+@media (min-width: 1216px) {
+  .header .navbar {
+    padding: 3rem 4rem;
+  }
+  .header .navbar .logo {
+    width: 10rem;
+  }
+  .header .navbar .menu {
+    display: flex;
+    gap: 2.5rem;
+  }
+  .main .files-section {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 6rem 4rem;
+  }
+  .main .files-section .content .title {
+    font-size: 1.75rem;
+    text-align: left;
+  }
+  .main .files-section .content .description {
+    font-size: 1.125rem;
+    text-align: left;
+  }
+  .main .files-section .content .form {
+    flex-direction: row;
+    align-items: center;
+  }
+  .main .share-section .share-wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 6rem 4rem;
+  }
+  .main .share-section .share-wrapper .content {
+    align-items: flex-start;
+  }
+  .main .share-section .share-wrapper .content .title {
+    text-align: left;
+  }
+  .main .share-section .share-wrapper .content .description {
+    text-align: left;
+  }
+  .main .share-section .share-wrapper .content .link-fylo {
+    margin: 0 0 4rem 0;
+  }
+  .main .share-section .share-wrapper .content .avatar-comment {
+    max-width: 22rem;
+  }
+  .main .newsletter .newsletter-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6rem 4rem;
+  }
+  .main .newsletter .newsletter-wrapper .about-newsletter {
+    align-items: flex-start;
+  }
+  .main .newsletter .newsletter-wrapper .about-newsletter .newsletter-title {
+    font-size: 1.75rem;
+  }
+  .main .newsletter .newsletter-wrapper .about-newsletter .newsletter-description {
+    font-size: 1.125rem;
+    text-align: left;
+  }
+  .main .newsletter .newsletter-wrapper .form-newsletter .form {
+    margin: 0 auto;
+  }
+  .main .newsletter .newsletter-wrapper .form-newsletter .form .input-email {
+    width: 30rem;
+  }
+  .main .newsletter .newsletter-wrapper .form-newsletter .form .started-btn {
+    width: 15rem;
+  }
+  .footer .footer-wrapper {
+    padding: 6rem 4rem;
+  }
+  .footer .footer-wrapper .footer-info {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15%;
+  }
+  .footer .footer-wrapper .footer-info .social-links {
+    margin-top: 0rem;
+  }
+  .footer .footer-wrapper .footer-info .fylo-contact {
+    margin-bottom: 0;
+  }
+  .footer .footer-wrapper .footer-info .social-links {
+    margin-bottom: 0;
+  }
+  .footer .footer-wrapper .attribution p {
+    font-size: 0.875rem;
+  }
+}/*# sourceMappingURL=style.css.map */

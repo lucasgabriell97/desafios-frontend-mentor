@@ -1,0 +1,200 @@
+@import "./variables";
+
+/*=== RESET ==========*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(./images/pattern-background-desktop.svg) no-repeat;
+    background-color: $bg-color;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/*=== CONTAINER ==========*/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    margin: 0 1.5rem;
+}
+
+/*=== CARD ==========*/
+.card {
+    width: 20.5rem;
+    background-color: $white-color;
+    border-radius: 1rem;
+    box-shadow: 2px 25px 70px -35px hsl(245, 75%, 52%);
+
+    text-align: center;
+
+    .hero-image {
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    /*=== CONTENT CARD ==========*/
+    .card-content {
+        padding: 2rem 1.5rem;
+    
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: $dark-blue;
+
+            margin-bottom: 1.25rem;
+        }
+    
+        p {
+            font-size: 1rem;
+            color: $desaturated-blue;
+            line-height: 1.6rem;
+
+            margin-bottom: 1.25rem;
+        }
+
+        .plan-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        
+            background-color: $very-pale-blue;
+            border-radius: 0.5rem;
+
+            padding: 1.25rem;
+            margin-bottom: 1.25rem;
+        
+            .plan-price {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            
+                .plan-price-wrapper {
+                    h4 {
+                        font-size: 0.875rem;
+                        color: $dark-blue;
+                    }
+        
+                    span {
+                        font-size: 0.875rem;
+                        color: $desaturated-blue;
+                    }
+                }
+            }
+        
+            a {
+                font-size: 0.875rem;
+                font-weight: 800;
+                color: $bright-blue;
+        
+                transition: all 0.2s;
+        
+                &:hover {
+                    color: hsl(245, 75%, 63% );
+                    text-decoration: none;
+                }
+            }
+        }
+        
+        .btn-proceed {
+            width: 100%;
+            border: none;
+            background-color: $bright-blue;
+            border-radius: 0.5rem;
+            box-shadow: 5px 10px 35px -12px hsl(245, 75%, 52%);
+            cursor: pointer;
+            
+            font-size: 1rem;
+            font-weight: 700;
+            color: $very-pale-blue;
+            
+            padding: 1rem;
+            margin-bottom: 1.25rem;
+
+            transition: background-color 0.2s;
+        
+            &:hover {
+                background-color: hsl(245, 75%, 63% );
+            }
+        }
+        
+        .btn-cancel {           
+            font-size: 0.875rem;
+            font-weight: 800;
+            color: $desaturated-blue;
+            text-decoration: none;
+        
+            transition: color 0.2s;
+        
+            &:hover {
+                color: $dark-blue;
+            }
+        }
+    }
+}
+
+/*=== FOOTER ==========*/
+
+.footer {margin: 0 1.5rem 1.25rem 1.5rem;}
+
+.footer p {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: $dark-blue;
+    text-align: center;
+    
+    a {
+        color: $bright-blue;
+        transition: color 0.2s;
+
+        &:hover {
+            color: hsl(245, 75%, 63% );
+            text-decoration: none;
+        }
+    }
+}
+
+/*====== DESKTOP DESIGN ======*/
+
+@media only screen and (min-width: 768px) {
+    .card {
+        width: 23rem;
+
+        /*=== CONTENT CARD ==========*/
+        .card-content {
+            padding: 2.5rem 2rem;
+
+            h2 {margin-bottom: 1.5rem;}  
+
+            p {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .plan-wrapper {
+                margin-bottom: 1.5rem;
+        
+                .plan-price {
+                    gap: 1.25rem;
+                }
+            }
+        
+            .btn-proceed {              
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+        
+            .btn-cancel {           
+                font-size: 1rem;
+            }
+        }
+    }
+}

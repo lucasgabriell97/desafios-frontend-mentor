@@ -1,0 +1,164 @@
+/*=== RESET ==========*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(./images/pattern-background-desktop.svg) no-repeat;
+  background-color: hsl(225, 100%, 94%);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/*=== CONTAINER ==========*/
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 1.5rem;
+}
+
+/*=== CARD ==========*/
+.card {
+  width: 20.5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 2px 25px 70px -35px hsl(245, 75%, 52%);
+  text-align: center;
+  /*=== CONTENT CARD ==========*/
+}
+.card .hero-image {
+  border-radius: 1rem 1rem 0 0;
+}
+.card .card-content {
+  padding: 2rem 1.5rem;
+}
+.card .card-content h2 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 1.25rem;
+}
+.card .card-content p {
+  font-size: 1rem;
+  color: hsl(224, 23%, 55%);
+  line-height: 1.6rem;
+  margin-bottom: 1.25rem;
+}
+.card .card-content .plan-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.card .card-content .plan-wrapper .plan-price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.card .card-content .plan-wrapper .plan-price .plan-price-wrapper h4 {
+  font-size: 0.875rem;
+  color: hsl(223, 47%, 23%);
+}
+.card .card-content .plan-wrapper .plan-price .plan-price-wrapper span {
+  font-size: 0.875rem;
+  color: hsl(224, 23%, 55%);
+}
+.card .card-content .plan-wrapper a {
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: hsl(245, 75%, 52%);
+  transition: all 0.2s;
+}
+.card .card-content .plan-wrapper a:hover {
+  color: hsl(245, 75%, 63%);
+  text-decoration: none;
+}
+.card .card-content .btn-proceed {
+  width: 100%;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 0.5rem;
+  box-shadow: 5px 10px 35px -12px hsl(245, 75%, 52%);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(225, 100%, 98%);
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+  transition: background-color 0.2s;
+}
+.card .card-content .btn-proceed:hover {
+  background-color: hsl(245, 75%, 63%);
+}
+.card .card-content .btn-cancel {
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.card .card-content .btn-cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+/*=== FOOTER ==========*/
+.footer {
+  margin: 0 1.5rem 1.25rem 1.5rem;
+}
+
+.footer p {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
+  text-align: center;
+}
+.footer p a {
+  color: hsl(245, 75%, 52%);
+  transition: color 0.2s;
+}
+.footer p a:hover {
+  color: hsl(245, 75%, 63%);
+  text-decoration: none;
+}
+
+/*====== DESKTOP DESIGN ======*/
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 23rem;
+    /*=== CONTENT CARD ==========*/
+  }
+  .card .card-content {
+    padding: 2.5rem 2rem;
+  }
+  .card .card-content h2 {
+    margin-bottom: 1.5rem;
+  }
+  .card .card-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .card .card-content .plan-wrapper {
+    margin-bottom: 1.5rem;
+  }
+  .card .card-content .plan-wrapper .plan-price {
+    gap: 1.25rem;
+  }
+  .card .card-content .btn-proceed {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .card .card-content .btn-cancel {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
